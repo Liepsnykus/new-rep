@@ -1478,7 +1478,7 @@ function addToBasket(event) {
     //   item.id==filteredProduct.id ? item.counter += 1 : null
     //   }
     // })
-
+//comment something
 
   }  
 
