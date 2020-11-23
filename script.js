@@ -1511,3 +1511,6 @@ backToList.addEventListener('click', enterShop)
 addToCart.addEventListener('click', checkSize)
 cartBtn.addEventListener('click', enterCart)
 backToShop.addEventListener ('click', enterShop)
+
+//so this is new comment
+let newVar = 50
