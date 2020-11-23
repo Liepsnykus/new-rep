@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42762d49f1.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="mainContainer p-absolute">
+    <header class="d-flex align-center j-sp-btw">
+      <div class="menuBTN pointer" id="menuBtn"><i class="fas fa-bars"></i> <span>MENU</span> </div>
+      <div class="logo pointer" id="logo">PICASSO</div>
+      <div class="cart pointer" id="cartBtn"><span id="totalSum">0.00€</span> <span>CART</span></div>
+    </header>
+
+
+    <main>
+      <!-- MENU  -->
+      <div class="menuContainer d-none p-absolute" id="menuContainer">
+        <div class="sideMenu d-flex dir-col p-relative">
+          <div class="closeMenu p-absolute pointer" id="closeMenu"><i class="fas fa-times"></i></div>
+          <div class="navigation d-flex dir-col">
+            <div id="menuHome">HOME</div>
+            <div id="menuShop">SHOP</div>
+            <div id="menuAbout">ABOUT</div>
+            <div id="menuContact">CONTACT</div>
+          </div>
+          <div class="politics d-flex dir-col">
+            <div>RETURN POLICY</div>
+            <div>DISCLAIMER</div>
+          </div>
+          <div class="socIcons d-flex">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+            <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- HOME PAGE  -->
+      <div class="homePage p-relative" id="homePage">
+        <div class="btn-wrapper p-absolute d-flex j-center">
+          <div class="shopBtn pointer" id="shopBtn">SHOP NOW</div>
+        </div>
+        <div class="p-absolute galeryButtons d-flex">
+          <div class="galeryBtn pointer" id="pic1"></div>
+          <div class="galeryBtn pointer" id="pic2"></div>
+          <div class="galeryBtn pointer" id="pic3"></div>
+        </div>
+      </div>
+
+      <!-- SHOP PAGE -->
+      <div class="shopPage d-none" id="shopPage">
+        <div class="gridContainer" id="shopGrid"></div>
+      </div>
+
+
+      <!-- ITEMS PAGE -->
+      <div class="itemPage d-none" id="itemPage">
+        <div class="imageSide d-flex align-center j-center">
+          <div class="imageWrap d-flex align-center j-center">
+            <img id="mainImg" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/f204ed5c024d42498e67ab9e012eb10f_9366/OZWEEGO_Shoes_White_FV9654_01_standard.jpg" alt="">
+            <div class="imgMenu">
+              <img id="img1" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9ced8f95abe745cd95b6ab9f001dc207_9366/OZWEEGO_Shoes_White_FV9654_01_standard.jpg" alt="">
+              <img id="img2" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9ced8f95abe745cd95b6ab9f001dc207_9366/OZWEEGO_Shoes_White_FV9654_02_standard.jpg" alt="">
+              <img id="img3" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/dad6b877e7fd4f1eb278ab9e012ec786_9366/OZWEEGO_Shoes_White_FV9654_03_standard.jpg" alt="">
+              <img id="img4" src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9535beef288247efb9e4ab9e012ec028_9366/OZWEEGO_Shoes_White_FV9654_04_standard.jpg" alt="">
+            </div>
+
+          
+          </div>
+        </div>
+        <div class="infoSide d-flex align-center j-center">
+          <div class="nameAndPrice">
+            <div id="nameBig">SHOES NAME</div>
+            <div id="priceBig">80.00€</div>
+          </div>
+          <div class="textWrap d-flex dir-col align-center j-center">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Qui, unde excepturi. Rerum atque labore aperiam laborum 
+              eligendi voluptate voluptas, consequatur natus sint. Hic, 
+              architecto modi!</p>
+              <select name="size" id="size">
+                <option value="none">SELECT SIZE</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+              </select>
+              <div class="addToCart" id="addToCart">ADD TO CART</div>
+              <div id="outOfStock" class="d-none">OUT OF STOCK</div>
+          </div>
+        </div>
+        <div id="backToList"><i class="fas fa-grip-horizontal"></i></div>
+        
+
+      </div>
+      <!-- CART PAGE -->
+      <div class="cartPage d-none" id="cartPage">
+        <div class="cartHeader">YOUR CART</div>
+        <div class="cartPageContainer" id="cartContainer">
+        </div>
+        <div class="cartMenu d-flex j-sp-btw">
+          <div class="cartMenuBtn" id="backToShop">BACK TO SHOP</div>
+          <div class="cartTotalPrice"> <span>Total:</span> <span id="totalPriceSpan" >400.00€</span></div>
+          <div class="cartMenuBtn" id="checkout">CHECKOUT</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

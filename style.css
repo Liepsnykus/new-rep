@@ -1,0 +1,556 @@
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+/* CONTROLS */
+
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+
+.d-flex {
+    display: flex;
+}
+.dir-col {
+    flex-direction: column;
+}
+.j-center {
+    justify-content: center;
+}
+
+.j-sp-btw {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+.d-none {
+    display: none;
+}
+.pointer:hover {
+    cursor: pointer;
+    transition: 0.2s;
+}
+/* PARTS */
+
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    padding: 20px 0px;
+    background-color: white;
+    box-shadow: 0px 0px 27px 1px rgba(0,0,0,0.4);
+    z-index: 10;
+
+}
+
+.menuBTN {
+    font-size: 13px;
+    margin: 0px 40px;
+}
+.menuBTN span {
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 10px;
+}
+
+.cart {
+    font-size: 13px;
+    margin: 0px 40px;
+}
+
+.cart span {
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+/* HOME PAGE  */
+.introContainer {
+    height: 100%;
+    width: 100%;
+}
+.homePage {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.galeryButtons {
+    bottom: 30px;
+    left: 50px;
+}
+.galeryButtons div {
+    padding: 9px;
+    margin: 7px;
+    background-color: white;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.galeryButtons div:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+.btn-wrapper {
+    width: 100%;
+    bottom: 15%;
+    z-index: 20;
+}
+
+.shopBtn {
+    padding: 20px 100px;
+    background-color: #fa5b2f;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.shopBtn:hover {
+    background-color: white;
+    color: rgb(250, 91, 47);
+}
+
+/* MENU PAGE  */
+
+.menuContainer {
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+.sideMenu{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(21, 23, 31);
+    padding: 20px 100px;
+}
+
+.closeMenu {
+    font-size: 23px;
+    top: 20px;
+    right: 40px;
+    color: white;
+}
+
+.navigation {
+    margin-top: 80px;
+}
+.navigation div {
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: white;
+    align-self: flex-start;
+}
+
+.navigation div:hover {
+    color: rgb(250, 91, 47);
+    cursor: pointer;
+}
+.politics {
+    margin-top: 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color:rgb(160, 160, 160);
+}
+.politics div {
+    margin: 2px 0px;
+    align-self: flex-start;
+}
+.politics div:hover {
+    color: white;
+    cursor: pointer;
+}
+.socIcons {
+    margin-top: 35px;
+    font-size: 16px;
+    color:rgb(160, 160, 160);
+}
+.socIcons a {
+    color:rgb(160, 160, 160);
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.socIcons a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* SHOP PAGE  */
+
+.shopPage {
+    padding: 100px 20px 0px 20px;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.item {
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+}
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 27px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+    z-index: 5;
+}
+
+.itemWrap {
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.itemWrap img {
+    width: 100%;
+}
+
+.itemCover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.productInfo {
+    display: none;
+    bottom: 0px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.name {
+    font-size: 30px;
+    text-align: center;
+}
+.price {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(250, 91, 47);
+}
+
+/* PRODUCT PAGE */
+
+.itemPage {
+    height: 100vh;
+    
+}
+
+.imageSide {
+    width: 50%;
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+.infoSide {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.nameAndPrice {
+    position: absolute;
+    left: -100%;
+    top: 140px;
+    width: 200%;
+    height: 80px;
+    z-index: 20;
+}
+
+#nameBig {
+    font-size: 48px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#priceBig {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: rgb(250, 91, 47);
+}
+
+.imageWrap {
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 1200px;
+    position: relative;
+    
+}
+
+#mainImg{
+    width: 100%;
+}
+.imgMenu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+
+}
+
+.imgMenu img {
+    width: 10%;
+    border: 3px solid black;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.imgMenu img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#backToList {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    padding: 6px 10px;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+#backToList:hover {
+    transform: scale(1.1);
+    background-color: lightgray;
+    color: white;
+    cursor: pointer;
+    border: 2px solid lightgray;
+}
+
+.textWrap {
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 400px;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 2.5;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: justify;
+    
+}
+
+#size {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.addToCart{
+    margin-top: 20px;
+    width: 100%;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.2s;
+}
+.addToCart:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#outOfStock {
+    margin-top: 20px;
+    padding:5px 10px;
+    box-sizing: border-box;
+    border: 3px solid rgb(250, 91, 47);
+    color: rgb(250, 91, 47);
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.cartPage {
+    width: 100%;
+}
+.cartHeader {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.cartPageContainer {
+    max-width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    
+}
+
+
+.cartItemFrame {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.cartItem {
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 27px 1px rgba(0,0,0,0.4);
+    background-color: #eeeeee;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cartItem img {
+    width: 100%;
+}
+
+.cartName {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+.cartPrice {
+    text-align: center;
+    font-size: 20px;
+    color:gray;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.cartInfo {
+    position: absolute;
+    bottom: 100px;
+}
+
+.closeCartItem {
+    font-size: 23px;
+    top: 20px;
+    right: 40px;
+    color: gray;
+    position: absolute;
+    cursor: pointer;
+}
+.addItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+
+.added {
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.added:hover {
+    color: rgb(250, 91, 47);
+}
+
+.addCount {
+    margin: 0px 40px;
+    font-size: 25px;
+    font-weight: 200;
+}
+.totalItemPrice {
+    margin: 40px;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: rgb(250, 91, 47);
+}
+
+.cartMenu {
+    max-width: 1170px;
+    margin: 50px auto;
+
+    height: 70px;
+    background-color: #eeeeee;
+}
+.cartMenuBtn{
+    margin: 10px;
+    width: 33%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.2s;
+}
+.cartMenuBtn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.cartTotalPrice{
+
+    padding: 5px 0px;
+    color: rgb(73, 73, 73);
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#totalPriceSpan {
+    color: rgb(250, 91, 47);
+}
